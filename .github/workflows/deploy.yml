@@ -96,7 +96,7 @@ jobs:
       - name: Build navigation file
         uses: borales/actions-yarn@v3
         with:
-          cmd: buildNavigation
+          cmd: buildNavigation TODO
       - name: Publish markdown files in ./src/pages
         run: |
             bash .github/scripts/publish-mds.sh "./src/pages" "${{ needs.set-state.outputs.path_prefix }}"
